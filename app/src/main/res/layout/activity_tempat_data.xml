@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--membuat halaman baru dengan mode RelativeLayout dengan warna dasar berserta tinggi dan lebar sesuai layar perangkat-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dasar"
+    android:padding="16dp">
+<!--memasukkan foto dari drawable yang bernama tubby -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="395dp"
+        android:layout_height="513dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/tubby" />
+
+<!--textview dengan id tv_nama yang terletak di tengah, berjarak 5dp dari atas layar dan font sebesar 25dp-->
+    <TextView
+        android:id="@+id/tv_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:layout_marginTop="10dp"
+        android:text="Nama Yang Diterima" />
+
+    <!--textview dengan id tv_umur yang terletak di tengah, dibawah foto tubby dan font sebesar 25dp-->
+    <TextView
+        android:id="@+id/tv_umur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_below="@id/imageView"
+        android:text="Umur Yang Diterima" />
+
+    <!--    ini adalah akhir dari layout, artinya jika ada konten lain berada di luar tag </RelativeLayout> maka tidak akan dianggap-->
+</RelativeLayout>

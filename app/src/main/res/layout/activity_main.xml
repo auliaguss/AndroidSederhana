@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--membuat halaman baru dengan mode LinearLayout dengan warna dasar berserta tinggi dan lebar sesuai layar perangkat-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/dasar"
+    android:padding="16dp">
+
+<!--    textview biasa yang ukuran lebarnya menyesuaikan layar dan tinggi menyesuaikan konten-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama" />
+
+<!--    EditText dengan id edt_nama yang ukuran lebarnya menyesuaikan layar dan tinggi menyesuaikan konten-->
+    <EditText
+        android:id="@+id/edt_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--    textview biasa yang ukuran lebarnya menyesuaikan layar dan tinggi menyesuaikan konten-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tahun Lahir" />
+
+    <!--    EditText dengan id edt_tlahir yang ukuran lebarnya menyesuaikan layar dan tinggi menyesuaikan konten-->
+    <EditText
+        android:id="@+id/edt_tlahir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"/>
+
+<!--    tombol dengan id btn_submit dengan warna dari colorPrimary bertulisan Submit yang ukuran lebarnya menyesuaikan layar dan tinggi menyesuaikan konten-->
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Submit" />
+
+<!--    ini adalah akhir dari layout, artinya jika ada konten lain berada di luar tag </LinearLayout> maka tidak akan dianggap-->
+</LinearLayout>
